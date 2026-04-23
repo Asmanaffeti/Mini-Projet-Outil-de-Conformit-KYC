@@ -1,10 +1,8 @@
 public class Nom {
         private String nom_original;
-        private String nom_normalise;
 
-        public Nom(String nom_original,String nom_normalise) {
-            this.nom_original = nom_original;
-            this.nom_nomalise = nom_normalise;
+        public Nom(String nomComplet) {
+            this.nom_original = nomComplet;
         }
         public int getNbMots() {
             int count = 0;
