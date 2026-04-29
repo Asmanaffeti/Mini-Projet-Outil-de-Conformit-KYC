@@ -1,26 +1,24 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class GénérateurTousLesCouples extends GénérateurDesCouples {
+
     public GénérateurTousLesCouples() {
     }
 
-    
-    
-      public CoupleDeNom[] generer(Nom[] tableau, Nom[] tableauDesNom) {
-        if (tableau == null || tableauDesNom == null) {
-            return new CoupleDeNom[0];
+    public List<CoupleDeNom> generer(List<Nom> liste, List<Nom> listeDesNoms) {
+        if (liste == null || listeDesNoms == null) {
+            return new ArrayList<>();
         }
 
-        int taille = tableau.length * tableauDesNom.length;
-        CoupleDeNom[] resultat = new CoupleDeNom[taille];
+        List<CoupleDeNom> resultat = new ArrayList<>();
 
-        int index = 0;
-        for (int i = 0; i < tableau.length; i++) {
-            for (int j = 0; j < tableauDesNom.length; j++) {
-                resultat[index] = new CoupleDeNom(tableau[i], tableauDesNom[j]);
-                index++;
+        for (int i = 0; i < liste.size(); i++) {
+            for (int j = 0; j < listeDesNoms.size(); j++) {
+                resultat.add(new CoupleDeNom(liste.get(i), listeDesNoms.get(j)));
             }
         }
 
         return resultat;
     }
-
 }
