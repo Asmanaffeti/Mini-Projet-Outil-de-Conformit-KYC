@@ -1,5 +1,7 @@
+import java.util.List;
+
 public abstract class GénérateurDesCouples {
 
-    public abstract CoupleDeNom[] generer(Nom[] tableau, Nom[] tableauDesNom);
-    
+    public abstract List<CoupleDeNom> generer(List<Nom> liste, List<Nom> listeDesNoms);
+
 }
