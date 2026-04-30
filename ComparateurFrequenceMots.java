@@ -2,7 +2,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ComparateurFrequenceMots extends ResponsableComparaison {
-    @Override
     public double comparer(Nom nom1, Nom nom2) {
         String[] words1 = nom1.getNomNormalise().split("\\s+");
         String[] words2 = nom2.getNomNormalise().split("\\s+");
