@@ -1,4 +1,4 @@
-public abstract class SélectionneurListe {
+public class SélectionneurListe {
     protected String nomFichier;
     protected int nbrFichier;
     public SélectionneurListe() {
