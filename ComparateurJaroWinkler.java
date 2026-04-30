@@ -1,5 +1,4 @@
 public class ComparateurJaroWinkler extends ResponsableComparaison {
-    @Override
     public double comparer(Nom nom1, Nom nom2) {
         String s1 = nom1.getNomNormalise();
         String s2 = nom2.getNomNormalise();
